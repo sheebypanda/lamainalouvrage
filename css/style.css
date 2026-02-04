@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Montserrat:wght@300;400;600&display=swap');
+
+:root {
+  --ocre: #B67B03;
+  --ocre-soft: #EFE1C3;
+  --bleu: #00001A;
+  --bleu-soft: #2A2A4A;
+  --brun: #6B0A0D;
+  --brun-soft: #A13A3D;
+  --fond-clair: #F6F1E8;
+  --texte: #2B2B2B;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: var(--fond-clair);
+  color: var(--texte);
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 6rem 0;
+}
+
+/* NAVBAR */
+.navbar {
+  background: var(--bleu);
+}
+
+.navbar a {
+  color: white !important;
+}
+
+.navbar a.active {
+  color: var(--ocre) !important;
+}
+
+/* TITRES */
+h2, h3, h4 {
+  font-family: "Love Ya Like A Sister", cursive;
+}
+
+/* HERO */
+.section-hero {
+  background: var(--bleu);
+  color: var(--fond-clair);
+  padding: 8rem 1rem;
+}
+
+.logo {
+  max-width: 300px;
+  background: white;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.text-accent {
+  color: var(--ocre);
+}
+
+/* ATELIER */
+.section-atelier {
+  background: var(--ocre-soft);
+}
+
+.highlight-list li {
+  margin-bottom: 0.5rem;
+}
+
+/* TEAM */
+.team-img {
+  width: 100%;
+  /* aspect-ratio: 1 / 1; */
+  object-fit: cover;
+  border-radius: 35px;
+}
+
+/* OFFRES */
+.section-offres {
+  background: var(--bleu);
+  color: var(--fond-clair);
+}
+
+.section-offres h2,
+.section-offres h4 {
+  color: var(--ocre);
+}
+
+/* ARTISTE */
+.section-artiste {
+  background: var(--brun-soft);
+  color: var(--fond-clair);
+}
+
+.section-artiste h2,
+.section-artiste h4 {
+  color: var(--fond-clair);
+}
+
+/* CONTACT */
+.section-contact {
+  background: var(--bleu-soft);
+  color: var(--fond-clair);
+}
+
+.section-contact a {
+  color: var(--ocre);
+}
+
+/* FOOTER */
+footer {
+  background: var(--bleu);
+  color: white;
+  padding: 2rem 0;
+}
