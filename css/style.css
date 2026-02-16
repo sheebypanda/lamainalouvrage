@@ -10,12 +10,27 @@
   --fond-clair: #F6F1E8;
   --texte: #2B2B2B;
 }
+/* Warning -> Ocre */
+.text-warning { color: var(--ocre) !important; }
+.bg-warning { background-color: var(--ocre) !important; }
+.btn-warning { background-color: var(--ocre) !important; border-color: var(--ocre) !important; color: white !important; }
+
+/* Danger -> Brun */
+.text-danger { color: var(--brun-soft) !important; }
+.bg-danger { background-color: var(--brun-soft) !important; }
+.btn-danger { background-color: var(--brun-soft) !important; border-color: var(--brun-soft) !important; }
+
+/* Primary -> Bleu */
+.text-primary { color: var(--bleu-soft) !important; }
+.bg-primary { background-color: var(--bleu-soft) !important; }
+.btn-primary { background-color: var(--bleu-soft) !important; border-color: var(--bleu-soft) !important; }
 
 body {
   font-family: "Montserrat", sans-serif;
   background: var(--fond-clair);
   color: var(--texte);
   scroll-behavior: smooth;
+  font-size: 1.4rem;
 }
 
 section {
@@ -36,10 +51,30 @@ section {
 }
 
 /* TITRES */
-h2, h3, h4 {
+h1, h2, h3, h4 {
   font-family: "Love Ya Like A Sister", cursive;
+  font-size: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
+h1 {
+  font-size: 7rem;
+}
+h2 {
+  font-size: 6rem;
+  color: var(--ocre) !important;
+  margin-top: 4rem;
+  margin-bottom: 8rem;
+}
+h3 {
+  font-size: 4rem;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+h4 {
+  font-size: 3rem;
+}
 /* HERO */
 .section-hero {
   background: var(--bleu);
@@ -48,18 +83,41 @@ h2, h3, h4 {
 }
 
 .logo {
-  max-width: 300px;
+  max-width: 700px;
   background: white;
   padding: 1rem;
-  border-radius: 1rem;
+  border-radius: 50%;
+  /* background: radial-gradient( */
+    circle at center, 
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 70%); /* Dégradé radial blanc/transparent */
 }
 
-.text-accent {
+h5 {
   color: var(--ocre);
+  
 }
 
-/* ATELIER */
-.section-atelier {
+div.agenda, div.inscription, div.tarifs, div.apropos {
+  margin-bottom: 6rem;
+}
+
+h2, h3, h4 {
+    display: inline-block; /* L'effet élastique rend mieux sur un bloc en ligne */
+    width: 100%;           /* Mais on garde la largeur pour le titre */
+    transition: transform 0.3s ease;
+    /* On évite les débordements horizontaux pendant l'animation */
+    overflow: visible; 
+}
+
+/* On peut aussi ralentir un peu l'animation pour un effet plus doux */
+.animate__rubberBand {
+    animation-duration: 1.2s;
+}
+
+
+
+.section-ateliers {
   background: var(--ocre-soft);
 }
 
@@ -97,7 +155,11 @@ h2, h3, h4 {
   color: var(--fond-clair);
 }
 
-/* CONTACT */
+.section-equipe {
+  background: var(--bleu-soft);
+  color: var(--fond-clair);
+}
+
 .section-contact {
   background: var(--bleu-soft);
   color: var(--fond-clair);
