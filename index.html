@@ -4,17 +4,14 @@
   <meta charset="utf-8">
   <title>La main à l’Ouvrage</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <link href="./css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link href="./css/style.css" rel="stylesheet">
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="100" tabindex="0">
 
-<!-- NAVBAR -->
 <nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
   <div class="container">
     <a class="navbar-brand" href="#accueil">La main à l’Ouvrage</a>
@@ -28,17 +25,21 @@
         <li class="nav-item"><a class="nav-link" href="#equipe"><i class="fa-solid fa-users"></i> L'équipe</a></li>
         <li class="nav-item"><a class="nav-link" href="#offres"><i class="fa-solid fa-tags"></i> Offres & Tarifs</a></li>
         <li class="nav-item"><a class="nav-link" href="#artiste"><i class="fa-solid fa-user-ninja"></i> À propos</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact"><i class="fa-solid fa-envelope"></i> Contacts</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
 <header id="accueil" class="section-hero">
-  <div class="container text-center">
-    <img src="./img/logo_lmao.png" class="img-fluid logo mb-4 animate__animated animate__rotateIn" alt="Logo La main à l’Ouvrage">
-    <h1 class="p-3 m-3">Peinture et modelage en papier-mâché</h1>
-    <h5>Un projet porté par l’association iDi interaction d’idées</h5>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center">
+        <img src="./img/logo_lmao.png" class="img-fluid logo mb-4 animate__animated animate__rotateIn" alt="Logo La main à l’Ouvrage">
+        <h1 class="p-2 p-md-3 m-2 m-md-3">Peinture et modelage en papier-mâché</h1>
+        <h5>Un projet porté par l’association iDi interaction d’idées</h5>
+      </div>
+    </div>
   </div>
 </header>
 
@@ -46,28 +47,29 @@
   <div class="container"> 
     <h2 class="text-center">Les ateliers</h2>
     <div class="row">
-      <h3>L’atelier d’expression libre</h3>
-      <p>L’atelier <strong>La main à l’Ouvrage</strong> est un espace dédié à la création et à l’expression personnelle, à travers deux médiums principaux : <strong>la peinture et le modelage en papier-mâché</strong>.</p>
-      <p><strong>Les outils et les moyens</strong> disponibles <strong>sont simples</strong>, favorisant ainsi leur prise en mains et la <strong>capacité d'agir</strong> de tous. Chaque participant est accompagné pas à pas par l'intervenante qui encourage à <strong>faire seul</strong> et à <strong>faire pour soi-même</strong>.</p>
-      <p><strong>Les ateliers sont accessibles à tous à partir de 5 ans</strong> et sont <strong>habités par un petit groupe de 5 à 7 personnes régulières</strong>. Dans cet espace-temps <strong>intimiste</strong> chacun peut en confiance, cheminer, rêver, jouer et <strong>prendre plaisir à créer des formes.</strong></p>
+      <div class="col-12">
+        <h3>L’atelier d’expression libre</h3>
+        <p>L’atelier <strong>La main à l’Ouvrage</strong> est un espace dédié à la création et à l’expression personnelle, à travers deux médiums principaux : <strong>la peinture et le modelage en papier-mâché</strong>.</p>
+        <p><strong>Les outils et les moyens</strong> disponibles <strong>sont simples</strong>, favorisant ainsi leur prise en mains et la <strong>capacité d'agir</strong> de tous. Chaque participant est accompagné pas à pas par l'intervenante qui encourage à <strong>faire seul</strong> et à <strong>faire pour soi-même</strong>.</p>
+        <p><strong>Les ateliers sont accessibles à tous à partir de 5 ans</strong> et sont <strong>habités par un petit groupe de 5 à 7 personnes régulières</strong>. Dans cet espace-temps <strong>intimiste</strong> chacun peut en confiance, cheminer, rêver, jouer et <strong>prendre plaisir à créer des formes.</strong></p>
+      </div>
     </div>
     
-    <div class="row mb-4 mt-4">
-      <div class="col-7">
+    <div class="row mb-4 mt-4 align-items-center">
+      <div class="col-12 col-md-7">
         <h3>L’atelier de peinture</h3>
         <p>Vous invite à l’exploration d’une palette riche de 18 couleurs, à développer une gestuelle dans l’espace, à laisser des traces pour se frayer un chemin imaginaire.</p>
       </div>
-      <div class="col-5">
-        <img src="./img/peinture.png" class="img-fluid" />
+      <div class="col-12 col-md-5 text-center">
+        <img src="./img/peinture.png" class="img-fluid" alt="Atelier Peinture" />
       </div>
-
     </div>
 
-    <div class="row mb-4 pt-4">
-      <div class="col-5">
-        <img src="./img/modelage.png" class="img-fluid" />
+    <div class="row mb-4 pt-4 align-items-center">
+      <div class="col-12 col-md-5 order-2 order-md-1 text-center">
+        <img src="./img/modelage.png" class="img-fluid" alt="Atelier Modelage" />
       </div>
-      <div class="col-7">      
+      <div class="col-12 col-md-7 order-1 order-md-2">      
         <h3>L’atelier de modelage en papier-mâché</h3>
         <p>Vous permet de découvrir, par le contact direct avec la matière, des constructions intérieures.</p>
       </div>
@@ -80,14 +82,13 @@
         <p>L’action de <strong>tracer</strong>, de <strong>modeler</strong>, de <strong>créer</strong> est au centre du dispositif de l’atelier, qui se veut un <strong>espace de liberté</strong> bordé par une professionnelle dans une <strong>dynamique collective</strong>. À chacun chacune de s’en emparer comme il l’entend.</p>
         <p>Venir aux ateliers de <strong>La main à l’Ouvrage</strong>, c’est s’offrir <strong>une parenthèse sur le monde</strong> pour renouer avec le plaisir de faire pour soi-même. C’est un espace privilégié pour <strong>prendre le temps</strong>, pour rencontrer matières et matériaux, pour explorer ce qui vient dans l’instant, pour écouter ce qui s’exprime. C’est important de prendre le temps de <strong>chercher, de se tromper, de recommencer</strong> à son rythme pour enfin <strong>développer son propre langage poétique</strong>. C’est autre chose qu’un cours d'arts-plastiques traditionnel accès sur l’apprentissage de techniques.</p>
         <p>Ce projet est porté par une <strong>association expérimentée</strong>, l’association iDi interaction d’idées. Les ateliers sont habités par la créativité et le professionnalisme de <strong>Sarah Hourcq</strong>, artiste plasticienne, spécialisée dans intervention auprès de tous publics. À l'atelier <strong>La main à l’Ouvrage</strong>, vous pourrez rencontrer les matériaux qui accompagnent l’artiste depuis de nombreuses années et qu'elle <strong>mettra au service de votre expression singulière</strong>.</p>
+        <h3>Les prochains temps forts</h3>
+        <ul class="highlight-list">
+          <li>Février / mars : Un <strong>crowdfunding</strong> avec possibilité de <strong>réserver des ateliers à prix réduits</strong></li>
+          <li>Week-end portes ouvertes en septembre & inscriptions annuelles</li>
+        </ul>
       </div>
     </div>
-
-    <h3>Les prochains temps forts</h3>
-    <ul class="highlight-list">
-      <li>Février / mars : Un <strong>crowdfunding</strong> avec possibilité de <strong>réserver des ateliers à prix réduits</strong></li>
-      <li>Week-end portes ouvertes en septembre& inscriptions annuelles</li>
-    </ul>
   </div>
 </section>
 
@@ -95,54 +96,23 @@
   <div class="container">
     <h2 class="mt-5 text-center">L’équipe</h2>
     <div class="row g-4 mt-3">
-      <div class="col-md-4 text-center">
-        <img src="./img/christophe.png" class="img-fluid img-thumbnail rounded-circle mb-3" alt="Christophe Pires">
+      <div class="col-12 col-md-4 text-center">
+        <img src="./img/christophe.png" class="img-fluid img-thumbnail rounded-circle mb-3" style="width:180px;" alt="Christophe Pires">
         <h4>Christophe Pires</h4>
         <h5>Trésorier</h5>
-        <p class="small">Artiste plasticien et
-animateur artistique.
-Il est co-fondateur de
-l’association iDi interaction
-d’idée. Il est le garant de
-notre identité, il nous a vu
-grandir
-* Il est notre bonne étoile*
-C’est chez lui que vos
-courriers postaux arriveront.</p>
+        <p class="small">Artiste plasticien et animateur artistique. Il est co-fondateur de l’association iDi interaction d’idée. Il est le garant de notre identité, il nous a vu grandir. *Il est notre bonne étoile* C’est chez lui que vos courriers postaux arriveront.</p>
       </div>
-
-      <div class="col-md-4 text-center">
-        <img src="./img/sarah.png" class="img-fluid img-thumbnail rounded-circle mb-3" alt="Sarah Hourcq">
+      <div class="col-12 col-md-4 text-center">
+        <img src="./img/sarah.png" class="img-fluid img-thumbnail rounded-circle mb-3" style="width:180px;" alt="Sarah Hourcq">
         <h4>Sarah Hourcq</h4>
         <h5>Artiste associée</h5>
-        <p class="small">Artiste plasticienne et
-intervenante artistique.
-Elle était également présente
-lors de la création d’iDi et nous
-accompagne aujourd’hui dans
-cette nouvelle aventure. Elle
-vous accueillera et fera vivre
-l’atelier. À ses côté vous
-pourrez voyager et développer
-tranquillement votre langage
-sensible et plastique.</p>
+        <p class="small">Artiste plasticienne et intervenante artistique. Elle était également présente lors de la création d’iDi et nous accompagne aujourd’hui dans cette nouvelle aventure. Elle vous accueillera et fera vivre l’atelier.</p>
       </div>
-
-      <div class="col-md-4 text-center">
-        <img src="./img/antoine.png" class="img-fluid img-thumbnail rounded-circle mb-3" alt="Antoine Reynaud">
+      <div class="col-12 col-md-4 text-center">
+        <img src="./img/antoine.png" class="img-fluid img-thumbnail rounded-circle mb-3" style="width:180px;" alt="Antoine Reynaud">
         <h4>Antoine Reynaud</h4>
         <h5>Président</h5>
-        <p class="small">Musicien professionnel et
-professeur de musique, il
-défend une approche
-pédagogique valorisant
-l’improvisation, le plaisir de
-jouer et le lâcher prise. Il
-rejoint de CA de l’association
-en 2015 et en devient
-président en 2025. Vous le
-rencontrerez lors de nos
-événements.</p>
+        <p class="small">Musicien professionnel et professeur de musique, il défend une approche pédagogique valorisant l’improvisation, le plaisir de jouer et le lâcher prise. Il rejoint le CA de l’association en 2015.</p>
       </div>
     </div>
   </div>
@@ -150,263 +120,249 @@ rencontrerez lors de nos
 
 <section id="offres" class="section-offres">
   <div class="container">
-    <h2>Offre & Tarifs</h2>
-    <div class="row agenda">
-      <h3>Agenda enfant :</h3>
-      <table class="table table-bordered">
-        <thead>
-          <tr>
-            <th scope="col">mardi</th>
-            <th scope="col">mercredi</th>
-            <th scope="col">jeudi</th>
-            <th scope="col">samedi</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td></td>
-            <td><span class="badge text-bg-info">Peinture</span> 09h45-10h45 <span class="badge rounded-pill text-bg-secondary">5-7 ans</span></td>
-            <td></td>
-            <td class="table-danger"><span class="badge text-bg-info">Peinture</span> 09h45-10h45 <span class="badge rounded-pill text-bg-secondary">5-7 ans</span></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td><span class="badge text-bg-warning">Modelage</span> 11h-12h30 <span class="badge rounded-pill text-bg-secondary">6-8 ans</span></td>
-            <td></td>
-            <td class="table-danger"><span class="badge text-bg-warning">Modelage</span> 11h-12h30 <span class="badge rounded-pill text-bg-secondary">6-8 ans</span></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td><span class="badge text-bg-info">Peinture</span> 14h-15h30 <span class="badge rounded-pill text-bg-secondary">8-10 ans</span></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td><span class="badge text-bg-warning">Modelage</span> 15h45-17h15 <span class="badge rounded-pill text-bg-secondary">9-11 ans</span></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="table-danger"><span class="badge text-bg-warning">Modelage</span> 17h00-18h30 <span class="badge rounded-pill text-bg-secondary">8-10 ans</span></td>
-            <td class="table-danger"><span class="badge text-bg-info">Peinture</span> 17h30-18h30 <span class="badge rounded-pill text-bg-secondary">9-11 ans</span></td>
-            <td class="table-danger"><span class="badge text-bg-warning">Modelage</span> 17h00-18h30 <span class="badge rounded-pill text-bg-secondary">11-14 ans</span></td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="row agenda">
-      <h3>Agenda adulte :</h3>
-        <table class="table table-bordered">
-          <thead>
-            <tr>
-              <th scope="col">mardi</th>
-              <th scope="col">mercredi</th>
-              <th scope="col">jeudi</th>
-              <th scope="col">vendredi</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><span class="badge text-bg-info">Peinture</span> 10h-11h30</td>
-              <td></td>
-              <td><span class="badge text-bg-info">Peinture</span> 10h30-12h30</td>
-              <td><span class="badge text-bg-warning">Modelage</span> 10h30-12h30</td>
-            </tr>
-            <tr>
-              <td><span class="badge text-bg-warning">Modelage</span> 11h30-13h</td>
-              <td></td>
-              <td><span class="badge text-bg-info">Peinture</span> 13h-14h</td>
-              <td><span class="badge text-bg-info">Peinture</span> 13h-14h</td>
-            </tr>
-            <tr>
-              <td><span class="badge text-bg-warning">Modelage</span> 14h30-16h00</td>
-              <td></td>
-              <td><span class="badge text-bg-warning">Modelage</span> 14h30-16h00</td>
-              <td><span class="badge text-bg-info">Peinture</span> 14h30-16h00</td>
-            </tr>
-            <tr>
-              <td class="table-danger"><span class="badge text-bg-warning">Modelage</span> 19h-21h</td>
-              <td class="table-danger"><span class="badge text-bg-info">Peinture</span> 19h-21h</td>
-              <td class="table-danger"><span class="badge text-bg-warning">Modelage</span> 19h-21h</td>
-              <td></td>
-            </tr>
-          </tbody>
-        </table>
-    </div>
-
-    <div class="row inscription">
-      <p>Inscriptions à partir de 5 ans toute l’année en fonction des places disponibles.</p>
-      <p>Pour s’inscrire aux ateliers ou aux stages, <strong>une adhésion annuelle</strong> à l’association est nécessaire, elle comprends : l’assurance, le matériel ainsi qu’une participation aux fluides.</p>
-    </div>
-
-    <div class="row tarifs">
-      <h3>Tarifs :</h3>
-      <div class="container my-5">
-        <div class="row g-4">
-          
-          <div class="col-md-6 col-lg-3">
-            <div class="card h-100 border-dashed shadow-sm ticket">
-              <div class="card-body text-center">
-                <div class="ticket-icon mb-2 text-primary"><i class="fa-solid fa-id-card fa-2x"></i></div>
-                <h5 class="card-title fw-bold">Adhésion annuelle</h5>
-                <hr class="ticket-line">
-                <ul class="list-unstyled">
-                  <li class="mb-2"><strong><i class="fa-solid fa-user"></i> 1 pers. :</strong> 35 €</li>
-                  <li class="mb-2"><strong><i class="fa-solid fa-children"></i> Famille (2+) :</strong> 50 €</li>
-                  <li><strong><i class="fa-solid fa-people-group"></i> Groupe (6+) :</strong> 100 €</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3">
-            <div class="card h-100 border-dashed shadow-sm ticket">
-              <div class="card-body text-center">
-                <div class="ticket-icon mb-2 text-success"><i class="fa-solid fa-calendar-days fa-2x"></i></div>
-                <h5 class="card-title fw-bold">Atelier Quinzaine</h5>
-                <hr class="ticket-line">
-                <ul class="list-unstyled">
-                  <li class="mb-2"><strong>1h :</strong> 190 € /an</li>
-                  <li class="mb-2"><strong>1h30 :</strong> 280 € / an</li>
-                  <li><strong>2h :</strong> 380 € / an</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3">
-            <div class="card h-100 border-dashed shadow-sm ticket">
-              <div class="card-body text-center">
-                <div class="ticket-icon mb-2 text-danger"><i class="fa-solid fa-clock fa-2x"></i></div>
-                <h5 class="card-title fw-bold">Atelier Hebdo</h5>
-                <hr class="ticket-line">
-                <ul class="list-unstyled">
-                  <li class="mb-2"><strong>1h :</strong> 380 € / an</li>
-                  <li class="mb-2"><strong>1h30 :</strong> 480 € / an</li>
-                  <li><strong>2h :</strong> 580 € / an</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3">
-            <div class="card h-100 border-dashed shadow-sm ticket ticket-special">
-              <div class="card-body text-center">
-                <div class="ticket-icon mb-2 text-warning"><i class="fa-solid fa-star fa-2x"></i></div>
-                <h5 class="card-title fw-bold">À la carte</h5>
-                <hr class="ticket-line">
-                <p class="small text-muted mb-3">Valable 1 an, selon dispo.</p>
-                <ul class="list-unstyled small text-start ps-2">
-                  <li>🎟️ <strong>10h :</strong> 120 €</li>
-                  <li>🎟️ <strong>15h :</strong> 180 €</li>
-                  <li>☀️ <strong>Stage :</strong> 70 €</li>
-                  <li>🔒 <strong>Privé :</strong> 220 €</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
+    <h2 class="text-center mb-4">Offre & Tarifs</h2>
+    
+    <div class="row agenda mb-5">
+      <div class="col-12">
+        <h3>Agenda enfant :</h3>
+        <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead class="table-light">
+              <tr>
+                <th scope="col">mardi</th>
+                <th scope="col">mercredi</th>
+                <th scope="col">jeudi</th>
+                <th scope="col">samedi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td><span class="badge text-bg-info">Peinture</span> 09h45-10h45 <span class="badge rounded-pill text-bg-secondary">5-7 ans</span></td>
+                <td></td>
+                <td class="table-danger"><span class="badge text-bg-info">Peinture</span> 09h45-10h45 <span class="badge rounded-pill text-bg-secondary">5-7 ans</span></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><span class="badge text-bg-warning">Modelage</span> 11h-12h30 <span class="badge rounded-pill text-bg-secondary">6-8 ans</span></td>
+                <td></td>
+                <td class="table-danger"><span class="badge text-bg-warning">Modelage</span> 11h-12h30 <span class="badge rounded-pill text-bg-secondary">6-8 ans</span></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><span class="badge text-bg-info">Peinture</span> 14h-15h30 <span class="badge rounded-pill text-bg-secondary">8-10 ans</span></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><span class="badge text-bg-warning">Modelage</span> 15h45-17h15 <span class="badge rounded-pill text-bg-secondary">9-11 ans</span></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="table-danger"><span class="badge text-bg-warning">Modelage</span> 17h00-18h30 <span class="badge rounded-pill text-bg-secondary">8-10 ans</span></td>
+                <td class="table-danger"><span class="badge text-bg-info">Peinture</span> 17h30-18h30 <span class="badge rounded-pill text-bg-secondary">9-11 ans</span></td>
+                <td class="table-danger"><span class="badge text-bg-warning">Modelage</span> 17h00-18h30 <span class="badge rounded-pill text-bg-secondary">11-14 ans</span></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
-  
-      <h4>Détails pratiques</h4>
-      <p>Les demandes d’inscriptions se font par mail, par téléphone ou à l’atelier et sont
-  validés uniquement après le paiement.</p>
-      <p>L’offre choisie ainsi que l’adhésion sont à payer le jour de l’inscription par chèque ou par espèce et sont non remboursables. Un échelonnement des paiements est bien évidemment possible.</p>
-      <p>Si l’intervenante venait à être absente, l’atelier annulé serait remplacé dans la mesure du possible.</p>
     </div>
 
+    <div class="row agenda mb-5">
+      <div class="col-12">
+        <h3>Agenda adulte :</h3>
+        <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead class="table-light">
+              <tr>
+                <th scope="col">mardi</th>
+                <th scope="col">mercredi</th>
+                <th scope="col">jeudi</th>
+                <th scope="col">vendredi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="badge text-bg-info">Peinture</span> 10h-11h30</td>
+                <td></td>
+                <td><span class="badge text-bg-info">Peinture</span> 10h30-12h30</td>
+                <td><span class="badge text-bg-warning">Modelage</span> 10h30-12h30</td>
+              </tr>
+              <tr>
+                <td><span class="badge text-bg-warning">Modelage</span> 11h30-13h</td>
+                <td></td>
+                <td><span class="badge text-bg-info">Peinture</span> 13h-14h</td>
+                <td><span class="badge text-bg-info">Peinture</span> 13h-14h</td>
+              </tr>
+              <tr>
+                <td><span class="badge text-bg-warning">Modelage</span> 14h30-16h00</td>
+                <td></td>
+                <td><span class="badge text-bg-warning">Modelage</span> 14h30-16h00</td>
+                <td><span class="badge text-bg-info">Peinture</span> 14h30-16h00</td>
+              </tr>
+              <tr>
+                <td class="table-danger"><span class="badge text-bg-warning">Modelage</span> 19h-21h</td>
+                <td class="table-danger"><span class="badge text-bg-info">Peinture</span> 19h-21h</td>
+                <td class="table-danger"><span class="badge text-bg-warning">Modelage</span> 19h-21h</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
 
+    <div class="row mb-4">
+      <div class="col-12">
+        <p>Inscriptions à partir de 5 ans toute l’année en fonction des places disponibles.</p>
+        <p>Pour s’inscrire aux ateliers ou aux stages, <strong>une adhésion annuelle</strong> à l’association est nécessaire, elle comprends : l’assurance, le matériel ainsi qu’une participation aux fluides.</p>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card h-100 border-dashed shadow-sm ticket text-center">
+          <div class="card-body">
+            <div class="ticket-icon mb-2 text-primary"><i class="fa-solid fa-id-card fa-2x"></i></div>
+            <h5 class="card-title fw-bold">Adhésion annuelle</h5>
+            <hr class="ticket-line">
+            <ul class="list-unstyled">
+              <li class="mb-2"><strong>1 pers. :</strong> 35 €</li>
+              <li class="mb-2"><strong>Famille (2+) :</strong> 50 €</li>
+              <li><strong>Groupe (6+) :</strong> 100 €</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card h-100 border-dashed shadow-sm ticket text-center">
+          <div class="card-body">
+            <div class="ticket-icon mb-2 text-success"><i class="fa-solid fa-calendar-days fa-2x"></i></div>
+            <h5 class="card-title fw-bold">Atelier Quinzaine</h5>
+            <hr class="ticket-line">
+            <ul class="list-unstyled">
+              <li><strong>1h :</strong> 190 € / an</li>
+              <li><strong>1h30 :</strong> 280 € / an</li>
+              <li><strong>2h :</strong> 380 € / an</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card h-100 border-dashed shadow-sm ticket text-center">
+          <div class="card-body">
+            <div class="ticket-icon mb-2 text-danger"><i class="fa-solid fa-clock fa-2x"></i></div>
+            <h5 class="card-title fw-bold">Atelier Hebdo</h5>
+            <hr class="ticket-line">
+            <ul class="list-unstyled">
+              <li><strong>1h :</strong> 380 € / an</li>
+              <li><strong>1h30 :</strong> 480 € / an</li>
+              <li><strong>2h :</strong> 580 € / an</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card h-100 border-dashed shadow-sm ticket ticket-special text-center">
+          <div class="card-body">
+            <div class="ticket-icon mb-2 text-warning"><i class="fa-solid fa-star fa-2x"></i></div>
+            <h5 class="card-title fw-bold">À la carte</h5>
+            <hr class="ticket-line">
+            <ul class="list-unstyled small">
+              <li>🎟️ <strong>10h :</strong> 120 €</li>
+              <li>🎟️ <strong>15h :</strong> 180 €</li>
+              <li>☀️ <strong>Stage :</strong> 70 €</li>
+              <li>🔒 <strong>Privé :</strong> 220 €</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-12">
+        <h4>Détails pratiques</h4>
+        <p>Les demandes d’inscriptions se font par mail, par téléphone ou à l’atelier et sont validés uniquement après le paiement.</p>
+        <p>L’offre choisie ainsi que l’adhésion sont à payer le jour de l’inscription par chèque ou par espèce et sont non remboursables. Un échelonnement des paiements est bien évidemment possible.</p>
+      </div>
+    </div>
   </div>
 </section>
 
 <section id="artiste" class="section-artiste">
   <div class="container">
-    <h2>À propos</h2>
-
-    <div class="row apropos">
-      <h3>Sarah Hourcq, artiste plasticienne.</h3>
-      <div class="col-3">
-        <img src="./img/sh2.jpg" class="img-fluid img-thumbnail" />
+    <h2 class="text-center mb-5">À propos</h2>
+    <div class="row mb-5 align-items-center">
+      <div class="col-12"><h3>Sarah Hourcq, artiste plasticienne.</h3></div>
+      <div class="col-12 col-md-3 text-center mb-3">
+        <img src="./img/sh2.jpg" class="img-fluid img-thumbnail" alt="Sarah Hourcq" />
       </div>
-      <div class="col-9">
+      <div class="col-12 col-md-9">
         <p>Sarah Hourcq pratique la sculpture par le modelage du papier-mâché, elle peint, dessine à l’aveugle et réalise des performances artistiques.</p>
-        <p>Elle aime que son travail se rencontre au delà des galeries d’art et affectionne les projets in-situ qui s’adaptent au lieu et au contexte où l’œuvre se déploie. Elle donne forme à des personnages inspirés de contes et de traditions qui prennent vie lors d’événements culturels et publics, comme par exemple la création de très grands Bonhommes Carnaval pour les villes, ou des masques animistes pour de la scénographie de spectacle.</p>
-        <p>Ses performances artistiques sont des moments de partage où les spectateurs deviennent acteur d’un mouvement créatif. </p>
-        <p>Après un parcours Universitaire en Master recherche en arts-plastiques, elle se spécialise dans l’intervention auprès de tous publics (Master pro AI-PAAS artiste intervenant - pratiques artistiques et action sociale de l’université de Bordeaux Montaingne). <br>
-          En 2011, elle est présente lors de la création de l’association iDi qui rassemble des travailleurs sociaux, des enseignants ainsi que des artistes plasticiens. Elle y co-construit de nombreux projets jusqu’en 2019.</p>
-
-        <p>Souhaitant approfondir ses connaissances en psychologie et affiner l’accompagnement de personnes, elle obtient en 2022 un certificat d’art-thérapeute reconnu au RNCP de niveau 6.</p>
-        <p>Sa créativité, son expérience et ses formations lui permettent de proposer un accompagnement bienveillant et un cadre structuré, garantissant aux participants de La main à l’Ouvrage l’espace nécessaire pour cheminer et prendre plaisir à créer en toute confiance.</p>
+        <p>Elle aime que son travail se rencontre au delà des galeries d’art et affectionne les projets in-situ qui s’adaptent au lieu et au contexte où l’œuvre se déploie.</p>
+        <p>Après un parcours Universitaire en Master recherche en arts-plastiques, elle se spécialise dans l’intervention auprès de tous publics. En 2022, elle obtient un certificat d’art-thérapeute reconnu au RNCP de niveau 6.</p>
       </div>
     </div>
     
-
-    
-    <div class="row apropos">
-      <h3>L’association iDi interaction d’idées</h3>
-      <h4>L'objet de l'association</h4>
-      <div class="col-9">
-        <p>L’Association a pour objet la mise en place de projets de pratiques artistiques destinés à tous les publics. Elle rassemble des artistes plasticiens qui dédient une partie de leur activité à la création
-    collective et multiculturelle dans le champ des arts visuels.</p>
-        <p>Depuis 2011, elle a porté de beaux et nombreux projets au cœur d’institutions sociales, médico-sociales, éducative et pédagogiques. Elle a été partenaire des grandes institutions de notre territoire : la DRAC Nouvelle-Aquitaine, ALCA, l’IDDAC,
-          le Département de la Gironde, le Diaconat de Bordeaux, la Halte 33, l’Institut Don
-          Bosco, Alifs… l’Académie de Bordeaux, les villes de Bègles, de Bordeaux, de Lormont,
-          de Floirac, de Saint-Médard, de Blanquefort, de Pessac, de Cestas, de Mazères...
-        </p>
+    <div class="row mb-5 align-items-center">
+      <div class="col-12 col-md-9 order-2 order-md-1">
+        <h3>L’association iDi interaction d’idées</h3>
+        <p>L’Association a pour objet la mise en place de projets de pratiques artistiques destinés à tous les publics. Elle rassemble des artistes plasticiens qui dédient une partie de leur activité à la création collective et multiculturelle.</p>
       </div>
-      <div class="col-3">
-        <img src="./img/logo_idi.png" class="img-fluid img-thumbnail" />
+      <div class="col-12 col-md-3 order-1 order-md-2 text-center mb-3">
+        <img src="./img/logo_idi.png" class="img-fluid img-thumbnail" alt="Logo IDI" />
       </div>
     </div>
-    <div class="row m-3 p-3">
-      <h4>La volonté d'un lieu</h4>
-      <div class="col-3">
-        <img src="./img/local.png" class="img-fluid img-thumbnail" />
+
+    <div class="row align-items-center">
+      <div class="col-12"><h4>La volonté d'un lieu</h4></div>
+      <div class="col-12 col-md-3 text-center mb-3">
+        <img src="./img/local.png" class="img-fluid img-thumbnail" alt="Local de l'atelier" />
       </div>
-      <div class="col-9">
-        <p>Après 15 ans d’existence à parcourir le territoire girondin, à inventer de nouveaux projets adaptés à des personnes singulières dans des espaces tout aussi singuliers ; après avoir semé des graines dans tout le département et au-delà, il est temps pourles membres de l’association de cultiver leur propre jardin en ouvrant un atelier unique.</p>
-        <p>La rue Maubec, lieu de l’atelier est une des rue piétonne du centre ville de Langon, elle relie entre autre, le Pôle culturel de la ville ( Centre culturel des Carmes) à la Médiathèque Intercommunale (La Quincaillerie). Ouvrir un atelier dans une rue piétonne n’est pas la même chose que d’ouvrir un atelier le long d’une départementale ou dans un centre commercial. Ce choix d’implantation exprime notre volonté de soutenir des dynamiques de proximité et des pratiques du quotidien plus responsables et plus humaines. Parcourir la rue à pieds, c’est prendre le temps, c’est déjà cheminer pour se mettre à l’ouvrage.</p>
-        <p>L’atelier s’inscrit également dans une logique écologique vertueuse en recyclant et revalorisant des dérivés de papier (journaux, papiers à dessin, cartons…) Un point de collecte de ces matières sera accessible à l’entrée de l’atelier.</p>
+      <div class="col-12 col-md-9">
+        <p>Le choix de la rue Maubec à Langon exprime notre volonté de soutenir des dynamiques de proximité. L’atelier s’inscrit également dans une logique écologique vertueuse en recyclant et revalorisant des dérivés de papier.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="contact" class="section-contact">
-  <div class="container">
-    <h2>Contacts</h2>
-
-    <p>
-      <strong>Atelier La main à l’Ouvrage</strong><br>
-      42 rue Maubec – 33210 Langon<br>
-      06 59 68 47 66<br>
-      contact@lamainalouvrage.fr
-    </p>
-
-    <p><strong>Adresse de correspondance</strong><br>
-      Association iDi interaction d’idées<br>
-      58 rue Ligier, appt6 33000Bordeaux<br>
-      SIRET : 535 089 338 00045
-    </p>
-
-  </div>
-</section>
-
-<footer class="text-center">
-  <div class="container">
+<section id="contact" class="section-contact py-5">
+  <div class="container text-center">
+    <h2>Contact</h2>
+    <div class="row social">
+      <div class="col-12">
+        <a href="https://www.facebook.com/association.iDi" target="_blank" class="btn btn-outline-dark mx-3 p-3">
+          <i class="fa-brands fa-facebook-f fa-3x"></i>
+        </a>
+        <a href="https://www.instagram.com/lamainalouvrage/" target="_blank" class="btn btn-outline-dark mx-3 p-3">
+          <i class="fa-brands fa-instagram fa-3x"></i>
+        </a> 
+      </div>
+    </div>
     <div class="row">
-      <div class="col-12 text-center p-3">
-        <a href="https://www.facebook.com/association.iDi" target="_blank" class="btn btn-social m-1"><i class="fa-brands fa-facebook-f fa-2x"></i></a>
-        <a href="https://www.instagram.com/lamainalouvrage/" target="_blank" class="btn btn-social m-1"><i class="fa-brands fa-instagram fa-2x"></i></a> 
+      <div class="col-12 col-md-6 mb-4">
+        <p><strong>Atelier La main à l’Ouvrage</strong><br>
+        42 rue Maubec – 33210 Langon<br>
+        06 59 68 47 66<br>
+        contact@lamainalouvrage.fr</p>
+      </div>
+      <div class="col-12 col-md-6 mb-4">
+        <p><strong>Adresse de correspondance</strong><br>
+        Association iDi interaction d’idées<br>
+        58 rue Ligier, appt6 33000 Bordeaux<br>
+        SIRET : 535 089 338 00045</p>
       </div>
     </div>
-    <small>© La main à l’Ouvrage</small>
+      <div class="col-12 footer">
+        <small>© La main à l’Ouvrage</small>
+      </div>
+    </div>
   </div>
-</footer>
+</section>
 
 <script src="./js/bootstrap.bundle.min.js"></script>
 <script src="./js/script.js"></script>
