@@ -157,7 +157,7 @@ h2, h3, h4 {
 }
 
 /* ARTISTE */
-.section-artiste {
+.section-artiste, .section-agenda {
   background: var(--brun-soft);
   color: var(--fond-clair);
 }

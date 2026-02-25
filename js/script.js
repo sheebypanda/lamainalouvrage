@@ -9,14 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        // Ajoute les classes Animate.css
-        entry.target.classList.add('animate__animated', 'animate__bounce');
-        
-        // Optionnel : on arrête d'observer une fois l'animation jouée
-        // observer.unobserve(entry.target); 
+        entry.target.classList.add('animate__animated', 'animate__pulse');
       } else {
-        // Optionnel : on retire les classes pour rejouer l'animation au prochain scroll
-        entry.target.classList.remove('animate__animated', 'animate__bounce');
+        entry.target.classList.remove('animate__animated', 'animate__pulse');
       }
     });
   }, observerOptions);
