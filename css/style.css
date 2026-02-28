@@ -32,7 +32,9 @@ body {
   scroll-behavior: smooth;
   font-size: 1.4rem;
 }
-
+.container, .container-fluid {
+    overflow: hidden; /* Coupe tout ce qui dépasse des marges négatives des rows */
+}
 section {
   padding: 6rem 0;
 }
@@ -124,7 +126,7 @@ h2, h3, h4 {
 
 /* On peut aussi ralentir un peu l'animation pour un effet plus doux */
 .animate__rubberBand {
-    animation-duration: 1.2s;
+    animation-duration: 1.5s;
 }
 
 
@@ -145,7 +147,6 @@ h2, h3, h4 {
   border-radius: 35px;
 }
 
-/* OFFRES */
 .section-offres {
   background: var(--bleu);
   color: var(--fond-clair);
@@ -156,7 +157,6 @@ h2, h3, h4 {
   color: var(--ocre);
 }
 
-/* ARTISTE */
 .section-artiste, .section-agenda {
   background: var(--brun-soft);
   color: var(--fond-clair);
