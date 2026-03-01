@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('animate__animated', 'animate__pulse');
+        entry.target.classList.add('animate__animated', 'animate__bounce');
       } else {
-        entry.target.classList.remove('animate__animated', 'animate__pulse');
+        entry.target.classList.remove('animate__animated', 'animate__bounce');
       }
     });
   }, observerOptions);

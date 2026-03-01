@@ -33,7 +33,7 @@ body {
   font-size: 1.4rem;
 }
 .container, .container-fluid {
-    overflow: hidden; /* Coupe tout ce qui dépasse des marges négatives des rows */
+    overflow: hidden;
 }
 section {
   padding: 6rem 0;
@@ -55,7 +55,6 @@ section {
 a.navbar-brand {
   font-family: "Love Ya Like A Sister", cursive;
 }
-/* TITRES */
 h1, h2, h3, h4 {
   font-family: "Love Ya Like A Sister", cursive;
   font-size: 4rem;
@@ -64,7 +63,6 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  /* clamp(MIN, VALEUR_IDÉALE, MAX) */
   font-size: clamp(2.5rem, 8vw, 7rem);
 }
 h2 {
@@ -81,7 +79,6 @@ h3 {
 h4 {
   font-size: 3rem;
 }
-/* HERO */
 .section-hero {
   background: var(--bleu);
   color: var(--fond-clair);
@@ -100,10 +97,9 @@ h4 {
   margin-right: auto;
 }
 
-/* Sur mobile, on réduit drastiquement le max-width */
 @media (max-width: 576px) {
   .logo {
-    max-width: 200px !important; /* Réduit la taille pour smartphone */
+    max-width: 200px !important;
   }
 }
 
@@ -120,13 +116,11 @@ h2, h3, h4 {
     display: inline-block; /* L'effet élastique rend mieux sur un bloc en ligne */
     width: 100%;           /* Mais on garde la largeur pour le titre */
     transition: transform 0.3s ease;
-    /* On évite les débordements horizontaux pendant l'animation */
     overflow: visible; 
 }
 
-/* On peut aussi ralentir un peu l'animation pour un effet plus doux */
 .animate__rubberBand {
-    animation-duration: 1.5s;
+    animation-duration: 13s;
 }
 
 
