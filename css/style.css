@@ -183,3 +183,86 @@ div.footer {
 div.social {
   margin-bottom: 7rem;
 }
+
+/* ====== Agenda "fusion" (styles scopés sous .agenda-fusion) ====== */
+.agenda-fusion {
+  --ag-bordeaux: #7a1d1f;   /* ateliers adultes hebdo            */
+  --ag-brique: #a8352f;     /* ateliers adultes "semaine paire"  */
+  --ag-ocre: #c8941e;       /* enfants / ados hebdo              */
+  --ag-ocre-clair: #ddb259; /* enfants / ados / samedi (paire)   */
+  --ag-cream-card: #f6e7cf; /* texte sur cartes                  */
+  --ag-header-bg: #fdf7ee;
+  --ag-header-ink: #4f2d2a;
+
+  font-family: "Courier Prime", ui-monospace, monospace;
+  padding: 34px 20px;
+  border-radius: 18px;
+  background-color: #f1e4d3;
+  background-image:
+    radial-gradient(120% 90%  at 8% 12%,  rgba(168,53,47,.38), transparent 42%),
+    radial-gradient(120% 90%  at 92% 10%, rgba(200,148,30,.30), transparent 45%),
+    radial-gradient(140% 120% at 25% 96%, rgba(122,29,31,.28), transparent 50%),
+    radial-gradient(140% 120% at 82% 90%, rgba(208,150,80,.26), transparent 48%),
+    radial-gradient(100% 100% at 50% 50%, rgba(255,248,238,.22), transparent 60%);
+}
+
+.agenda-fusion .agenda-day-header {
+  font-family: "Cinzel", serif;
+  text-transform: uppercase;
+  letter-spacing: .18em;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--ag-header-ink);
+  background: var(--ag-header-bg);
+  border: 1px solid rgba(79,45,42,.18);
+  border-radius: 12px;
+  padding: .55rem .25rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,.08);
+  margin-bottom: 1rem;
+}
+
+.agenda-fusion .agenda-cards {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+
+.agenda-fusion .agenda-card {
+  border-radius: 8px;
+  padding: .7rem .5rem;
+  text-align: center;
+  color: var(--ag-cream-card);
+  line-height: 1.55;
+  font-size: .82rem;
+  letter-spacing: .02em;
+  box-shadow: 0 2px 5px rgba(0,0,0,.18);
+}
+.agenda-fusion .agenda-card span { display: block; }
+.agenda-fusion .agenda-card .ac-heure { font-weight: 700; margin-bottom: .1rem; }
+.agenda-fusion .agenda-card i { margin-right: .35rem; }
+
+.agenda-fusion .agenda-card--adulte       { background: var(--ag-bordeaux);   }
+.agenda-fusion .agenda-card--paire        { background: var(--ag-brique);     }
+.agenda-fusion .agenda-card--enfant       { background: var(--ag-ocre);       }
+.agenda-fusion .agenda-card--enfant-paire { background: var(--ag-ocre-clair); }
+
+/* Espace "pause déjeuner" entre le matin et l'après-midi du samedi */
+.agenda-fusion .agenda-gap { height: 1.6rem; }
+
+/* Petite légende */
+.agenda-fusion .agenda-legende {
+  margin-top: 1.4rem;
+  color: #5a3530;
+  font-size: .85rem;
+  text-align: center;
+}
+.agenda-fusion .agenda-legende .pastille {
+  display: inline-block;
+  width: .85rem;
+  height: .85rem;
+  border-radius: 50%;
+  vertical-align: -1px;
+  margin: 0 .25rem 0 .9rem;
+  box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
