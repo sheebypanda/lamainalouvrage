@@ -35,6 +35,19 @@
 .bg-success { background-color: var(--bleu) !important; }
 .btn-success { background-color: var(--bleu) !important; border-color: var(--bleu) !important; }
 
+a {
+  color: var(--ocre);
+  text-decoration-color: var(--ocre);
+}
+a:hover, a:focus {
+  color: var(--brun-soft);
+  text-decoration-color: var(--brun-soft);
+}
+
+p, li {
+  line-height: 1.7;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   background: var(--fond-clair);
@@ -54,6 +67,10 @@ section {
   background: var(--bleu);
 }
 
+.navbar .container {
+  max-width: 1600px;
+}
+
 .navbar a {
   color: white !important;
 }
@@ -64,6 +81,11 @@ section {
 
 a.navbar-brand {
   font-family: "Love Ya Like A Sister", cursive;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1rem;
+  white-space: nowrap;
 }
 h1, h2, h3, h4 {
   font-family: "Love Ya Like A Sister", cursive;
