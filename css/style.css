@@ -25,6 +25,16 @@
 .bg-primary { background-color: var(--bleu-soft) !important; }
 .btn-primary { background-color: var(--bleu-soft) !important; border-color: var(--bleu-soft) !important; }
 
+/* Info -> Brun */
+.text-info { color: var(--brun) !important; }
+.bg-info { background-color: var(--brun) !important; }
+.btn-info { background-color: var(--brun) !important; border-color: var(--brun) !important; color: white !important; }
+
+/* Success -> Bleu fonce */
+.text-success { color: var(--bleu) !important; }
+.bg-success { background-color: var(--bleu) !important; }
+.btn-success { background-color: var(--bleu) !important; border-color: var(--bleu) !important; }
+
 body {
   font-family: "Montserrat", sans-serif;
   background: var(--fond-clair);
@@ -66,18 +76,18 @@ h1 {
   font-size: clamp(2.5rem, 8vw, 7rem);
 }
 h2 {
-  font-size: 5rem;
+  font-size: clamp(2.2rem, 6vw, 5rem);
   color: var(--ocre) !important;
   margin-top: 4rem;
-  margin-bottom: 8rem;
+  margin-bottom: 3rem;
 }
 h3 {
-  font-size: 4rem;
+  font-size: clamp(2rem, 5vw, 4rem);
   margin-top: 3rem;
   margin-bottom: 5rem;
 }
 h4 {
-  font-size: 3rem;
+  font-size: clamp(1.6rem, 4vw, 3rem);
 }
 .section-hero {
   background: var(--bleu);
